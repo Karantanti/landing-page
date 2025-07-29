@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #bc5555;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.header {
+  background: #333;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.header h1 {
+  float: left;
+  margin-left: 30px;
+}
+
+.header nav {
+  float: right;
+  margin-right: 30px;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+.header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: #4CAF50;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #fff;
+  color: #4CAF50;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.features {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1 1 30%;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.about,
+.contact {
+  background: #e2e2e2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-box {
+    flex-direction: column;
+  }
+
+  .header h1,
+  .header nav {
+    float: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
